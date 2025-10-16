@@ -2,6 +2,7 @@
 
 int main() {
 
+    // Dados da primeira carta
     char estado[] = "A";
     char codigo_da_carta[] = "A01";
     char Nome_da_Cidade[] = "São Paulo";
@@ -10,6 +11,7 @@ int main() {
     float Pib = 699280000000.0;
     int Numero_de_pontos_Turisticos = 50;
 
+    // Dados da segunda carta
     char estado2[] = "B";
     char codigo_da_carta2[] = "B02";
     char Nome_da_Cidade2[] = "Rio de Janeiro";
@@ -18,12 +20,14 @@ int main() {
     float Pib2 = 300000000000.50;
     int Numero_de_pontos_Turisticos2 = 30;
 
+    // Cálculo de Densidade Populacional e PIB per capita
     float Densidade_Populacional = Populacao / Area;
     float Pib_per_capita = Pib / Populacao;
 
     float Densidade_Populacional2 = Populacao2 / Area2;
     float Pib_per_capita2 = Pib2 / Populacao2;
 
+    // Exibição dos dados das cartas
     printf("=== CARTA 1 ===\n");
     printf("Estado: %s\n", estado);
     printf("Código da Carta: %s\n", codigo_da_carta);
@@ -46,6 +50,7 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional2);
     printf("PIB per capita: R$ %.2f\n", Pib_per_capita2);
 
+    // Comparação das cartas
     printf("\n=== COMPARAÇÃO DE CARTAS ===\n");
 
     printf("\nComparação de cartas (Atributo: População):\n");
